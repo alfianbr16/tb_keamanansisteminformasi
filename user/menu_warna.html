@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoBiz</title>
+    <title>CoBo</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -152,6 +152,7 @@
                     <td class="p-2">${item.quantity}</td>
                     <td class="p-2">Rp. ${item.subtotal}</td>
                     <td class="p-2">
+                        <button class="bg-blue-500 text-white py-1 px-3 rounded-full mb-2" onclick="addToCart('${item.name}', ${item.price})">Tambah</button>
                         <button class="bg-red-500 text-white py-1 px-3 rounded-full" onclick="reduceFromCart('${item.name}', ${item.price})">Kurangi</button>
                     </td>
                 `;
